@@ -5,7 +5,7 @@ license 'Apache-2.0'
 description 'Installs and configures SmokePing server with fping'
 version '3.1.0'
 
-depends 'apache2'
+depends 'apache2', '< 7.0.0'
 depends 'perl'
 
 %w(debian ubuntu).each do |os|
