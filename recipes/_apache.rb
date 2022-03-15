@@ -24,6 +24,8 @@ end
 
 apache2_module 'cgi'
 
+apache2_module "rewrite"
+
 file '/etc/smokeping/apache2.config' do
   action :delete
 end
