@@ -16,8 +16,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include_recipe 'apache2'
-include_recipe 'apache2::mod_rewrite'
 apache_module 'cgi'
 
 file '/etc/smokeping/apache2.config' do
