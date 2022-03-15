@@ -28,10 +28,10 @@ template '/etc/apache2/sites-available/smokeping.conf' do
   notifies :reload, 'service[apache2]'
 end
 
-apache_site 'smokeping' do
+apache2_site 'smokeping' do
   enable true
 end
 
-apache_site '000-default' do
+apache2_site '000-default' do
   enable false
 end
