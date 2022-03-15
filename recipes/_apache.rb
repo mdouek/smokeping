@@ -29,9 +29,9 @@ template '/etc/apache2/sites-available/smokeping.conf' do
 end
 
 apache2_site 'smokeping' do
-  enable true
+  action :enable
 end
 
 apache2_site '000-default' do
-  enable false
+  action :disable
 end
