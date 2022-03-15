@@ -17,7 +17,7 @@
 # limitations under the License.
 
 service 'apache2' do
-  service_name lazy { apache_platform_service_name }
+  service_name :apache2
   supports restart: true, status: true, reload: true
   action :nothing
 end
