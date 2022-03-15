@@ -17,7 +17,7 @@
 # limitations under the License.
 
 service 'apache2' do
-  service_name :apache2
+  service_name 'apache2'
   supports restart: true, status: true, reload: true
   action :nothing
 end
